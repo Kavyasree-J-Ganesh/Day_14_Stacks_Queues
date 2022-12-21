@@ -1,17 +1,14 @@
 package com.bridgelabz;
 
 public class LinkedListMain {
-        public static void main(String[] args) {
-            LinkedList<Integer> linkedList1 = new LinkedList<>();
-            linkedList1.append(56);                            // UC3
-            linkedList1.append(70);                            // UC3
-            linkedList1.searchAndInsert(30, 56);    // UC4
-            linkedList1.findNode(30);                   // UC7
-            linkedList1.findNode(100);                  // UC7
-            linkedList1.searchAndInsert(40, 30);   // UC8
-            linkedList1.searchAndDelete(40);                  // UC9
-            linkedList1.printLinkedList();
-            linkedList1.size();                               // UC9
-        }
+    public static void main(String[] args) {
+        LinkedList<Integer> stack = new LinkedList<>();
+        System.out.println("Stack after adding 70");                  // UC1 creating stack
+        stack.prePend(70);
+        System.out.println("Stack after adding 30");
+        stack.prePend(30);
+        System.out.println("Stack after adding 56");
+        stack.prePend(56);                              // UC9
+    }
 }
 
