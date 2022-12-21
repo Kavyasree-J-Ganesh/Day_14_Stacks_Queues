@@ -32,7 +32,10 @@ public class LinkedList<T> {
 
     public void printLinkedList(){              // UC1
         Node ptr = head;   // ptr = pointer
-
+        if(ptr == null) {
+            System.out.println("Empty list");
+            return;
+        }
         while(ptr != null){
             if(ptr.next !=null){
                 System.out.print(ptr.key + "->");

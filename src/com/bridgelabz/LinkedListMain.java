@@ -21,14 +21,23 @@ public class LinkedListMain {
         stack.pop();
         stack.peak(); */
 
-        LinkedList<Integer> stack = new LinkedList<>();
-        System.out.println("Queue after adding 56");    // UC1 creating stack
-        stack.append(56);                               // enqueing the queue
+
+        LinkedList<Integer> queue = new LinkedList<>();
+        System.out.println("Queue after adding 56");    // UC3 creating Queue
+        queue.append(56);                               // enqueueing the queue(adding elements in to queue)
         System.out.println("Queue after adding 30");
-        stack.append(30);                               // enqueing the queue
+        queue.append(30);                               // enqueueing the queue
         System.out.println("Queue after adding 70");
-        stack.append(70);                               // enqueing the queue
+        queue.append(70);                               // enqueueing the queue
         System.out.println("");
+
+
+        System.out.println("Queue after Removing 56");              // UC4 removing elements from queue
+        queue.pop();                                            // Dequeueing element
+        System.out.println("Queue after Removing 30");
+        queue.pop();
+        System.out.println("Queue after Removing 70");
+        queue.pop();
     }
 }
 
