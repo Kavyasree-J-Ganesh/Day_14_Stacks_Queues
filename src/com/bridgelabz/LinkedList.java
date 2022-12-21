@@ -31,4 +31,21 @@ public class LinkedList<T> {
 
         System.out.println("");
     }
+
+    public void pop(){                        // delete first element UC5
+        if(head != null){
+            Node ptr = head;
+            head = head.next;
+            System.gc();
+        }
+        this.printLinkedList();
+    }
+
+    public void peak(){      // search and insert  UC4
+        if(head != null){
+            System.out.println("Top most element is " + head.key);
+        } else{
+            System.out.println("No elements in the list");
+        }
+    }
 }
