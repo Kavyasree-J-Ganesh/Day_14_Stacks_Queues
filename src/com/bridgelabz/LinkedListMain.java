@@ -21,13 +21,13 @@ public class LinkedListMain {
         stack.pop();
         stack.peak(); */
 
-        LinkedList<Integer> stack = new LinkedList<>();
+        LinkedList<Integer> queue = new LinkedList<>();
         System.out.println("Queue after adding 56");    // UC1 creating stack
-        stack.append(56);                               // enqueing the queue
+        queue.append(56);                               // enqueing the queue
         System.out.println("Queue after adding 30");
-        stack.append(30);                               // enqueing the queue
+        queue.append(30);                               // enqueing the queue
         System.out.println("Queue after adding 70");
-        stack.append(70);                               // enqueing the queue
+        queue.append(70);                               // enqueing the queue
         System.out.println("");
     }
 }
