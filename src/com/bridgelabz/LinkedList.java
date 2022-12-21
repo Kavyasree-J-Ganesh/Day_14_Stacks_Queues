@@ -4,6 +4,19 @@ public class LinkedList<T> {
     Node<T> head;
     Node<T> tail;
 
+    public void append(T key){                       // appending  UC3
+        Node ptr = head;
+        Node<T> newNode = new Node(key);
+        if(head == null){
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+        this.printLinkedList();
+    }
+
     public void prePend(T key) {                   // prepending    UC2
         Node<T> newNode = new Node(key);
         if(head == null){
